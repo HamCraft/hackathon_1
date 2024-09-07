@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="page-title">Dynamic Resume Builder</h1>
+
+    <!-- Form for user input -->
+    <form id="resume-form">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+        </div>
+        <div>
+            <label for="education">Education:</label>
+            <input type="text" id="education" required>
+        </div>
+        <div>
+            <label for="work-experience">Work Experience:</label>
+            <input type="text" id="work-experience" required>
+        </div>
+        <div>
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills" required>
+        </div>
+        <button type="submit">Generate Resume</button>
+    </form>
+
+    <!-- Div where the generated resume will be displayed -->
+    <div id="resume"></div>
+
+    <!-- Button to download the resume as PDF -->
+    <button id="download-pdf">Download Resume as PDF</button>
+
+    <p id="note"><b>To download your resume as a PDF: Click the "Download Resume as PDF" button. Next, use the destination selector to choose your desired location and select the "Save as PDF" option to save the file.</b></p>
+
+    <!-- Display the unique URL for sharing -->
+    <div id="share-link">
+        <p>Shareable Link:</p>
+        <input type="text" id="generated-url" readonly>
+    </div>
+
+    <!-- Script to handle form logic and resume generation -->
+
+    <!-- type = "module"  to     -->
+    <script src="app.js" type="module"></script>
+</body>
+</html>
