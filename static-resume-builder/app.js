@@ -1,14 +1,25 @@
 "use strict";
 document.addEventListener('DOMContentLoaded', () => {
+    // Section Toggle Button
     const toggleButton = document.getElementById('toggle');
-    const EducationSection = document.getElementById('education');
+    const educationSection = document.getElementById('education');
     const skillsSection = document.getElementById('skills');
-    const Work_Experience_Section = document.getElementById('work-experience');
-    if (toggleButton && EducationSection && skillsSection && Work_Experience_Section) {
+    const workExperienceSection = document.getElementById('work-experience');
+    // Ensure all elements are present
+    if (toggleButton && educationSection && skillsSection && workExperienceSection) {
         toggleButton.addEventListener('click', () => {
-            EducationSection.classList.toggle('hidden');
+            educationSection.classList.toggle('hidden');
             skillsSection.classList.toggle('hidden');
-            Work_Experience_Section.classList.toggle('hidden');
+            workExperienceSection.classList.toggle('hidden');
+        });
+    }
+    // Navbar Menu Toggle Button
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    // Check if elements exist and add event listener
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
         });
     }
 });

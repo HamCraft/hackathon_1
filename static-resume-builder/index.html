@@ -8,15 +8,30 @@
 </head>
 <body>
   <header>
-    <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-    <h1>Ahmed Yaqoob Dhedhi</h1>
-    <p>Contact: dhedhiahmedyaqoob@gmail.com</p>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <h1>Ahmed Yaqoob Dhedhi</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work-experience">Experience</a></li>
+      </ul>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+    </nav>
   </header>
 
   <main>
+   
+    <!-- Content sections -->
+    <section id="image">
+      <img src="/profile.jpg" alt="profile-picture">
+    </section>
+
     <section id="education">
       <h2>Education</h2>
-      <p>Foundation in Buisness Management 2024-Now (Greenwich University)</p>
+      <p>Foundation in Business Management 2024-Now (Greenwich University)</p>
     </section>
 
     <section id="skills">
@@ -32,7 +47,7 @@
 
     <section id="work-experience">
       <h2>Work Experience</h2>
-      <p>Front End Intern at Code Aplha (July 2024 - August 2024)</p>
+      <p>Front End Intern at Code Alpha (July 2024 - August 2024)</p>
     </section>
 
     <button id="toggle">Toggle Sections</button>
